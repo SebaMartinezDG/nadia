@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background: rgb(236,87,18);
+    background: linear-gradient(90deg, rgba(236,87,18,1) 0%, rgba(82,82,91,1) 49%, rgba(226,235,237,1) 100%); 
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000f6;
+    padding: 10px ;
+    color: white;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    margin-right: 5px;
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+   
+}
+.container {
+    width: 100%;
+    max-width: 650px;
+    min-width: 450px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+   
+    
+    background-color: #8a8a8a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #fc0c0c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #fc0c0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+}
+
+
+/* Botón de regreso al login */
+.login-button {
+    color: white;
+    text-decoration: none;
+    background-color: #fc0c0c;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: rgb(21, 25, 243);
+    text-align: left;
+    padding: 10px;
+    font-size: 12px;
+}
+/* seccion ubicacion*/

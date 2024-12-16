@@ -1,0 +1,116 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9e9e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc0c0c;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px); /* Resta el tamaño del header */
+    overflow: hidden;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene las proporciones */
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgb(124, 124, 124); /* Fondo semi-transparente */
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-box button {
+    background-color: #fc0c0c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #464343;
+}
+
+.signup-button {
+    background-color: #007BFF;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de ubicación */
